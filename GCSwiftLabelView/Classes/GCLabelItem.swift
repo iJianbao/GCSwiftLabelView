@@ -59,9 +59,8 @@ public class GCLabelItem: UIButton {
     public override func layoutSubviews() {
         super.layoutSubviews()
         print("\(#function): GCLabelItem")
-        var labelSize = label.sizeThatFits(CGSize.init(width: self.frame.width,
+        let labelSize = label.sizeThatFits(CGSize.init(width: self.frame.width,
                                                        height: self.frame.height))
-        labelSize.width += padding.horizontal
         if (isShowIcon) {
             var imageSize = CGSize.init(width: self.frame.height - padding.vertical * 2,
                                         height: self.frame.height - padding.vertical * 2)
@@ -86,7 +85,7 @@ public class GCLabelItem: UIButton {
     }
     
     public override func sizeThatFits(_ size: CGSize) -> CGSize {
-        return CGSize.init(width: label.frame.origin.x + label.frame.width, height: self.frame.height)
+        return CGSize.init(width: label.frame.origin.x + label.frame.width + padding.horizontal, height: self.frame.height)
     }
     
     required init?(coder: NSCoder) {

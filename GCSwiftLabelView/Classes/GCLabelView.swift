@@ -21,7 +21,7 @@ public class GCLabelModel: NSObject {
 public class GCLabelView: UIScrollView {
     /// 上下左右间距
     @objc
-    public var padding: UIEdgeInsets = UIEdgeInsets.zero
+    private var padding: UIEdgeInsets = UIEdgeInsets.zero
     
     /// item 之间的间距
     @objc
@@ -35,9 +35,17 @@ public class GCLabelView: UIScrollView {
     @objc
     public var itemNormalBGImage: UIImage?
     
+    /// item 字体颜色
+    @objc
+    public var itemNormalFColor: UIColor?
+    
     /// item 选中的背景图
     @objc
     public var itemSelectedBGImage: UIImage?
+    
+    /// item 选中字体颜色
+    @objc
+    public var itemSelectedFColor: UIColor?
     
     /// item 边框颜色
     @objc
@@ -133,7 +141,9 @@ public class GCLabelView: UIScrollView {
         item.layer.cornerRadius = itemCornerRadius
         
         item.setBackgroundImage(itemNormalBGImage, for: .normal)
-        item.setBackgroundImage(itemSelectedBGImage, for: .normal)
+        item.setBackgroundImage(itemSelectedBGImage, for: .selected)
+        item.setTitleColor(itemNormalFColor, for: .normal)
+        item.setTitleColor(itemSelectedFColor, for: .selected)
         item.addTarget(self, action: #selector(labelItemAction(_:)), for: .touchUpInside)
         self.addSubview(item)
         itemLabelArray.append(item)
