@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class GCLabelModel {
+public class GCLabelModel: NSObject {
     public var name = ""
     public var image: UIImage? = nil
     public init(name: String, image: UIImage?) {
