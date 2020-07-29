@@ -7,7 +7,7 @@
 
 import UIKit
 
-public struct GCLabelModel {
+public class GCLabelModel {
     public var name = ""
     public var image: UIImage? = nil
     public init(name: String, image: UIImage?) {
@@ -87,9 +87,15 @@ public class GCLabelView: UIScrollView {
     // TODO: method
     /// 设置数据源，并开始布局
     /// - Parameter array: 数据源
-    public func layoutForDataArray(array: Array<GCLabelModel>) {
+    public func layoutForDataArray(array: [GCLabelModel]) {
         itemArray = array
         layoutLabelItems()
+    }
+    
+    @objc
+    public func layoutForDataArray(array: NSArray) {
+       itemArray = array as? Array<GCLabelModel> ?? []
+       layoutLabelItems()
     }
     
     private func layoutLabelItems() {
