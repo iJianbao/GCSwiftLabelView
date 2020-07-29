@@ -142,8 +142,6 @@ public class GCLabelView: UIScrollView {
         
         item.setBackgroundImage(itemNormalBGImage, for: .normal)
         item.setBackgroundImage(itemSelectedBGImage, for: .selected)
-        item.setTitleColor(itemNormalFColor, for: .normal)
-        item.setTitleColor(itemSelectedFColor, for: .selected)
         item.addTarget(self, action: #selector(labelItemAction(_:)), for: .touchUpInside)
         self.addSubview(item)
         itemLabelArray.append(item)
@@ -151,6 +149,11 @@ public class GCLabelView: UIScrollView {
     
     @objc func labelItemAction(_ sender: GCLabelItem) {
         sender.isSelected = !sender.isSelected
+        if sender.isSelected {
+            sender.label.textColor = itemSelectedFColor
+        }else {
+            sender.label.textColor = itemNormalFColor
+        }
         guard let selectBlock = labelItemSelected else {
             return
         }
