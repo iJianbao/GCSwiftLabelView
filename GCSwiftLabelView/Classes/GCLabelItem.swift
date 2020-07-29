@@ -33,12 +33,6 @@ public class GCLabelItem: UIButton {
     /// 标签的 icon
     private lazy var iconImage = UIImageView.init()
     
-    // TODO: getter
-    @objc
-    var labelText: String {
-        return label.text ?? ""
-    }
-    
     // TODO: setter
     var icon: UIImage? {
         get { iconImage.image }
@@ -48,6 +42,12 @@ public class GCLabelItem: UIButton {
             }
             iconImage.image = image
         }
+    }
+    
+    // TODO: method
+    @objc
+    func labelText() -> NSString {
+        return label.text as NSString? ?? ""
     }
     
     // TODO: system method
