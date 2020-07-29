@@ -10,6 +10,8 @@ import UIKit
 public class GCLabelModel: NSObject {
     public var name = ""
     public var image: UIImage? = nil
+    
+    @objc
     public init(name: String, image: UIImage?) {
         self.name = name
         self.image = image
