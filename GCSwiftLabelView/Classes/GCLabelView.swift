@@ -158,5 +158,10 @@ public class GCLabelView: UIView {
             }
             lastLabelItem = item
         }
+        if let lastItem = lastLabelItem {
+            self.frame = CGRect.init(origin: self.frame.origin, size: CGSize.init(width: self.frame.width, height: lastItem.frame.origin.y + lastItem.frame.height + padding.bottom))
+        }else {
+            self.frame = CGRect.init(origin: self.frame.origin, size: CGSize.init(width: self.frame.width, height: padding.top + padding.bottom))
+        }
     }
 }

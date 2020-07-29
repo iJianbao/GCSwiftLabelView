@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         var dataList: Array<GCLabelModel> = []
         for i in 0..<10 {
-            let model: GCLabelModel = GCLabelModel.init(name: "我的\(i)", image: nil)
+            let model: GCLabelModel = GCLabelModel.init(name: "我的apple在哪\(i)", image: nil)
             dataList.append(model)
         }
         labelView.backgroundColor = UIColor.green
