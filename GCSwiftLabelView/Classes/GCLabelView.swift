@@ -173,13 +173,13 @@ public class GCLabelView: UIScrollView {
             }
             var surpWidth = itemMaxWidth
             if let lastItem = lastLabelItem {
-                surpWidth -= (lastItem.frame.width + lastItem.frame.origin.x + itemMargin.vertical)
+                surpWidth -= (lastItem.frame.width + lastItem.frame.origin.x + itemMargin.horizontal)
                 if itemSize.width <= surpWidth {
                     // 同一行
-                    item.frame = CGRect.init(x: lastItem.frame.origin.x + lastItem.frame.width + itemMargin.vertical, y: lastItem.frame.origin.y, width: itemSize.width, height: itemHeight)
+                    item.frame = CGRect.init(x: lastItem.frame.origin.x + lastItem.frame.width + itemMargin.horizontal, y: lastItem.frame.origin.y, width: itemSize.width, height: itemHeight)
                }else {
                     // 换行
-                    item.frame = CGRect.init(x: padding.left, y: lastItem.frame.origin.y + lastItem.frame.height + itemMargin.horizontal, width: itemSize.width, height: itemHeight)
+                    item.frame = CGRect.init(x: padding.left, y: lastItem.frame.origin.y + lastItem.frame.height + itemMargin.vertical, width: itemSize.width, height: itemHeight)
                }
             }else {
                 // 第一个

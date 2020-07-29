@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             dataList.append(model)
         }
         labelView.backgroundColor = UIColor.green
+        labelView.itemMargin = UIOffset.init(horizontal: 10, vertical: 30)
         labelView.layoutForDataArray(array: dataList)
         self.view.addSubview(labelView)
         labelView.labelItemSelected = { newSelItem, oldSelItem in
