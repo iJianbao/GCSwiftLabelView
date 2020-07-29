@@ -20,30 +20,39 @@ public class GCLabelModel: NSObject {
 
 public class GCLabelView: UIScrollView {
     /// 上下左右间距
+    @objc
     public var padding: UIEdgeInsets = UIEdgeInsets.zero
     
     /// item 之间的间距
+    @objc
     public var itemMargin: UIOffset = UIOffset.init(horizontal: 10, vertical: 10)
     
     /// item 高度
+    @objc
     public var itemHeight: CGFloat = 30
     
     /// item 背景图
+    @objc
     public var itemNormalBGImage: UIImage?
     
     /// item 选中的背景图
+    @objc
     public var itemSelectedBGImage: UIImage?
     
     /// item 边框颜色
+    @objc
     public var itemBorderColor: UIColor = .white
     
     /// item 边框宽度
+    @objc
     public var itemBorderWidth: CGFloat = 0.5
     
     /// item 圆角
+    @objc
     public var itemCornerRadius: CGFloat = 12
     
     /// item 文本字体
+    @objc
     public var itemFont: UIFont = UIFont.systemFont(ofSize: 14)
     
     /// 数据列表
@@ -59,12 +68,13 @@ public class GCLabelView: UIScrollView {
     lazy var titleLabel: UILabel = UILabel.init()
     
     /// 显示 titleLabel
-    public var isShowTitleLabel = false
+    private var isShowTitleLabel = false
     
     /// 选中的 labelItem
     private var selectLabelItem: GCLabelItem?
     
     /// 选择 labelItem 回调
+    @objc
     public var labelItemSelected: ((GCLabelItem, GCLabelItem?) -> Void)?
     
     // TODO: getter
@@ -74,6 +84,7 @@ public class GCLabelView: UIScrollView {
     }
     
     // TODO: setter
+    @objc
     public var title: String {
         get { return titleLabel.text ?? "" }
         set {
