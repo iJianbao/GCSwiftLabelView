@@ -16,7 +16,7 @@ public struct GCLabelModel {
     }
 }
 
-public class GCLabelView: UIView {
+public class GCLabelView: UIScrollView {
     /// 上下左右间距
     public var padding: UIEdgeInsets = UIEdgeInsets.zero
     
@@ -159,9 +159,17 @@ public class GCLabelView: UIView {
             lastLabelItem = item
         }
         if let lastItem = lastLabelItem {
-            self.frame = CGRect.init(origin: self.frame.origin, size: CGSize.init(width: self.frame.width, height: lastItem.frame.origin.y + lastItem.frame.height + padding.bottom))
+            self.contentSize = CGSize.init(width: self.frame.width, height: lastItem.frame.origin.y + lastItem.frame.height + padding.bottom)
         }else {
-            self.frame = CGRect.init(origin: self.frame.origin, size: CGSize.init(width: self.frame.width, height: padding.top + padding.bottom))
+            self.contentSize = CGSize.init(width: self.frame.width, height: padding.top + padding.bottom)
         }
     }
+    
+//    public override func sizeToFit() {
+//        if let lastItem = lastLabelItem {
+//            self.frame = CGRect.init(origin: self.frame.origin, size: CGSize.init(width: self.frame.width, height: lastItem.frame.origin.y + lastItem.frame.height + padding.bottom))
+//        }else {
+//            self.frame = CGRect.init(origin: self.frame.origin, size: CGSize.init(width: self.frame.width, height: padding.top + padding.bottom))
+//        }
+//    }
 }
