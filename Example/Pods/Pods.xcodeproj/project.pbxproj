@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E7AB25B14D442709E7D41E7184B6427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6E5E209F669F39D8B7D33C8E653877E4 /* Pods-GCSwiftLabelView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB584D9DD102C78AC0920AE3CD646778 /* Pods-GCSwiftLabelView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B2D332CEDC3223FD749BE4FC34CBC02 /* GCLabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CA872C302F64367DF622AD14E5B6F0 /* GCLabelItem.swift */; };
+		9E39CC60ACD24A8DF95FACEFEB32161A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9F153D9047357FD7D2E6A1E669232B6C /* Pods-GCSwiftLabelView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5ED091901D08225285270B591BB9852 /* Pods-GCSwiftLabelView_Example-dummy.m */; };
+		D651345D75B934C86E8558D8FE9696E4 /* GCSwiftLabelView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A66D4AA71A08C5FD4E68D79C3B32D82 /* GCSwiftLabelView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4E75D28F5DA04D3FD28FEA65E666C6D /* GCSwiftLabelView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E08E34C702EC6E9034B9AA615CF784E /* GCSwiftLabelView-dummy.m */; };
+		FA902ADD5B68B8743168833709C94BF7 /* GCLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84B0B981237C260C349C8E11D389E0 /* GCLabelView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9D9D1CA8444B36791BEFEDA4733D098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB60356B2F388B9142B935A3F4B55E2;
+			remoteInfo = GCSwiftLabelView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06532387413D6B57EC1105080E7A8A57 /* Pods-GCSwiftLabelView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GCSwiftLabelView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35AC3088880DF9C1241C1E9B145FE6E5 /* GCSwiftLabelView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCSwiftLabelView-prefix.pch"; sourceTree = "<group>"; };
+		50C6F0D8D0D651D84F7E0370FF21CE58 /* GCSwiftLabelView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GCSwiftLabelView-Info.plist"; sourceTree = "<group>"; };
+		5A66D4AA71A08C5FD4E68D79C3B32D82 /* GCSwiftLabelView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCSwiftLabelView-umbrella.h"; sourceTree = "<group>"; };
+		68B7A05197445E1472A7044CC9F2E618 /* GCSwiftLabelView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GCSwiftLabelView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		69FEBBDC2349BC1182C84BF583DA6235 /* GCSwiftLabelView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCSwiftLabelView.modulemap; sourceTree = "<group>"; };
+		6C82684CFA5731272CD19E3505C9C476 /* GCSwiftLabelView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCSwiftLabelView.release.xcconfig; sourceTree = "<group>"; };
+		7E08E34C702EC6E9034B9AA615CF784E /* GCSwiftLabelView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCSwiftLabelView-dummy.m"; sourceTree = "<group>"; };
+		83F3C1C9ACFCFA31682768FA149B83F4 /* GCSwiftLabelView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCSwiftLabelView.framework; path = GCSwiftLabelView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D6E109B6176DEE8F791CC4F5BB564E /* Pods-GCSwiftLabelView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCSwiftLabelView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5ED091901D08225285270B591BB9852 /* Pods-GCSwiftLabelView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GCSwiftLabelView_Example-dummy.m"; sourceTree = "<group>"; };
+		A87FA1B00151B81E94A587CDCD00E0D1 /* Pods-GCSwiftLabelView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GCSwiftLabelView_Example.modulemap"; sourceTree = "<group>"; };
+		A8E0921B05ACADC58F4D317C6FFAEB29 /* Pods-GCSwiftLabelView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCSwiftLabelView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AF84B0B981237C260C349C8E11D389E0 /* GCLabelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCLabelView.swift; path = GCSwiftLabelView/Classes/GCLabelView.swift; sourceTree = "<group>"; };
+		B65CF57D92B436BF42C3F5C41AF47FB0 /* Pods-GCSwiftLabelView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GCSwiftLabelView_Example-Info.plist"; sourceTree = "<group>"; };
+		C73B82B709EA9393EB825509F4EC0D9A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CB584D9DD102C78AC0920AE3CD646778 /* Pods-GCSwiftLabelView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GCSwiftLabelView_Example-umbrella.h"; sourceTree = "<group>"; };
+		D6F7250FB4A153F6F14BD8D4D937DC4D /* Pods_GCSwiftLabelView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GCSwiftLabelView_Example.framework; path = "Pods-GCSwiftLabelView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22E2E05CC2303CD1CC237B49224789D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EB5BEDF6D8FE863EE09131B405291C6D /* GCSwiftLabelView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCSwiftLabelView.debug.xcconfig; sourceTree = "<group>"; };
+		F53FF1E324C4C1653FA35DBD0156FE61 /* Pods-GCSwiftLabelView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GCSwiftLabelView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F90A2DEAB73922D80798D4813D52AB3C /* Pods-GCSwiftLabelView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GCSwiftLabelView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9CA872C302F64367DF622AD14E5B6F0 /* GCLabelItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCLabelItem.swift; path = GCSwiftLabelView/Classes/GCLabelItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2939AC1D2FF050CD057A22126AD88A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E39CC60ACD24A8DF95FACEFEB32161A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2101D276ED5E47E238370A53227156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7AB25B14D442709E7D41E7184B6427 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F6DF7BFE9A9F99B6EC6C4823DC5FAC1 /* Pods-GCSwiftLabelView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A87FA1B00151B81E94A587CDCD00E0D1 /* Pods-GCSwiftLabelView_Example.modulemap */,
+				06532387413D6B57EC1105080E7A8A57 /* Pods-GCSwiftLabelView_Example-acknowledgements.markdown */,
+				F90A2DEAB73922D80798D4813D52AB3C /* Pods-GCSwiftLabelView_Example-acknowledgements.plist */,
+				A5ED091901D08225285270B591BB9852 /* Pods-GCSwiftLabelView_Example-dummy.m */,
+				F53FF1E324C4C1653FA35DBD0156FE61 /* Pods-GCSwiftLabelView_Example-frameworks.sh */,
+				B65CF57D92B436BF42C3F5C41AF47FB0 /* Pods-GCSwiftLabelView_Example-Info.plist */,
+				CB584D9DD102C78AC0920AE3CD646778 /* Pods-GCSwiftLabelView_Example-umbrella.h */,
+				A8E0921B05ACADC58F4D317C6FFAEB29 /* Pods-GCSwiftLabelView_Example.debug.xcconfig */,
+				98D6E109B6176DEE8F791CC4F5BB564E /* Pods-GCSwiftLabelView_Example.release.xcconfig */,
+			);
+			name = "Pods-GCSwiftLabelView_Example";
+			path = "Target Support Files/Pods-GCSwiftLabelView_Example";
+			sourceTree = "<group>";
+		};
+		53DA8710745BF64245E784CF7B4C85B8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5599791AA245F4646EA878291CF595FF /* GCSwiftLabelView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5599791AA245F4646EA878291CF595FF /* GCSwiftLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				F9CA872C302F64367DF622AD14E5B6F0 /* GCLabelItem.swift */,
+				AF84B0B981237C260C349C8E11D389E0 /* GCLabelView.swift */,
+				5632500EEA810B01EB9C37DB5117DDF9 /* Pod */,
+				70E947FFA63CEBE1B2B9C66C0C4C4A60 /* Support Files */,
+			);
+			name = GCSwiftLabelView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5632500EEA810B01EB9C37DB5117DDF9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				68B7A05197445E1472A7044CC9F2E618 /* GCSwiftLabelView.podspec */,
+				C73B82B709EA9393EB825509F4EC0D9A /* LICENSE */,
+				E22E2E05CC2303CD1CC237B49224789D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		70E947FFA63CEBE1B2B9C66C0C4C4A60 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69FEBBDC2349BC1182C84BF583DA6235 /* GCSwiftLabelView.modulemap */,
+				7E08E34C702EC6E9034B9AA615CF784E /* GCSwiftLabelView-dummy.m */,
+				50C6F0D8D0D651D84F7E0370FF21CE58 /* GCSwiftLabelView-Info.plist */,
+				35AC3088880DF9C1241C1E9B145FE6E5 /* GCSwiftLabelView-prefix.pch */,
+				5A66D4AA71A08C5FD4E68D79C3B32D82 /* GCSwiftLabelView-umbrella.h */,
+				EB5BEDF6D8FE863EE09131B405291C6D /* GCSwiftLabelView.debug.xcconfig */,
+				6C82684CFA5731272CD19E3505C9C476 /* GCSwiftLabelView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GCSwiftLabelView";
+			sourceTree = "<group>";
+		};
+		9F95D21332B850B7F313FF994F5CEB79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83F3C1C9ACFCFA31682768FA149B83F4 /* GCSwiftLabelView.framework */,
+				D6F7250FB4A153F6F14BD8D4D937DC4D /* Pods_GCSwiftLabelView_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				53DA8710745BF64245E784CF7B4C85B8 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9F95D21332B850B7F313FF994F5CEB79 /* Products */,
+				FBC3406EBD23CE4E6EC26596D583B109 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBC3406EBD23CE4E6EC26596D583B109 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F6DF7BFE9A9F99B6EC6C4823DC5FAC1 /* Pods-GCSwiftLabelView_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AC418F0E6333A53BC88D2FAD7C771DE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5E209F669F39D8B7D33C8E653877E4 /* Pods-GCSwiftLabelView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68BDBCFAA9C401CA0E5D6741C1820D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D651345D75B934C86E8558D8FE9696E4 /* GCSwiftLabelView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D46E819C6086CD80BA0409A93221FEA0 /* Pods-GCSwiftLabelView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B01436774E2565CCC7B54DC3E2C1D5F /* Build configuration list for PBXNativeTarget "Pods-GCSwiftLabelView_Example" */;
+			buildPhases = (
+				AC418F0E6333A53BC88D2FAD7C771DE6 /* Headers */,
+				6F549B236C4615CDD3B348828BBE2A55 /* Sources */,
+				FD2101D276ED5E47E238370A53227156 /* Frameworks */,
+				677144C01307472C61AFE574976C57E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CDF8B578DC266E1F3C50E1E3AF42CD /* PBXTargetDependency */,
+			);
+			name = "Pods-GCSwiftLabelView_Example";
+			productName = "Pods-GCSwiftLabelView_Example";
+			productReference = D6F7250FB4A153F6F14BD8D4D937DC4D /* Pods_GCSwiftLabelView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAB60356B2F388B9142B935A3F4B55E2 /* GCSwiftLabelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B57A43F331EEB6D946A946D6FD98EA5 /* Build configuration list for PBXNativeTarget "GCSwiftLabelView" */;
+			buildPhases = (
+				B68BDBCFAA9C401CA0E5D6741C1820D6 /* Headers */,
+				561E4FBF4C181387A60E2E2A4A693505 /* Sources */,
+				2939AC1D2FF050CD057A22126AD88A6D /* Frameworks */,
+				0442FE10E65111DA8380BEEA0B2B3F29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCSwiftLabelView;
+			productName = GCSwiftLabelView;
+			productReference = 83F3C1C9ACFCFA31682768FA149B83F4 /* GCSwiftLabelView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9F95D21332B850B7F313FF994F5CEB79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB60356B2F388B9142B935A3F4B55E2 /* GCSwiftLabelView */,
+				D46E819C6086CD80BA0409A93221FEA0 /* Pods-GCSwiftLabelView_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0442FE10E65111DA8380BEEA0B2B3F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677144C01307472C61AFE574976C57E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		561E4FBF4C181387A60E2E2A4A693505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2D332CEDC3223FD749BE4FC34CBC02 /* GCLabelItem.swift in Sources */,
+				FA902ADD5B68B8743168833709C94BF7 /* GCLabelView.swift in Sources */,
+				E4E75D28F5DA04D3FD28FEA65E666C6D /* GCSwiftLabelView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F549B236C4615CDD3B348828BBE2A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F153D9047357FD7D2E6A1E669232B6C /* Pods-GCSwiftLabelView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CDF8B578DC266E1F3C50E1E3AF42CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCSwiftLabelView;
+			target = FAB60356B2F388B9142B935A3F4B55E2 /* GCSwiftLabelView */;
+			targetProxy = E9D9D1CA8444B36791BEFEDA4733D098 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02F9D307DA478C84D537636A0461C1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E0921B05ACADC58F4D317C6FFAEB29 /* Pods-GCSwiftLabelView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GCSwiftLabelView_Example/Pods-GCSwiftLabelView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GCSwiftLabelView_Example/Pods-GCSwiftLabelView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3833324587FD5480B90CE2F16CBDF8A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D6E109B6176DEE8F791CC4F5BB564E /* Pods-GCSwiftLabelView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GCSwiftLabelView_Example/Pods-GCSwiftLabelView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GCSwiftLabelView_Example/Pods-GCSwiftLabelView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AF988D062B25BED7D8F0C6B6DA70B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB5BEDF6D8FE863EE09131B405291C6D /* GCSwiftLabelView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCSwiftLabelView/GCSwiftLabelView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCSwiftLabelView/GCSwiftLabelView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCSwiftLabelView/GCSwiftLabelView.modulemap";
+				PRODUCT_MODULE_NAME = GCSwiftLabelView;
+				PRODUCT_NAME = GCSwiftLabelView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		847048D46A1D96FBA79700E6F8DEDFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C82684CFA5731272CD19E3505C9C476 /* GCSwiftLabelView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCSwiftLabelView/GCSwiftLabelView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCSwiftLabelView/GCSwiftLabelView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCSwiftLabelView/GCSwiftLabelView.modulemap";
+				PRODUCT_MODULE_NAME = GCSwiftLabelView;
+				PRODUCT_NAME = GCSwiftLabelView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B01436774E2565CCC7B54DC3E2C1D5F /* Build configuration list for PBXNativeTarget "Pods-GCSwiftLabelView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F9D307DA478C84D537636A0461C1EF /* Debug */,
+				3833324587FD5480B90CE2F16CBDF8A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B57A43F331EEB6D946A946D6FD98EA5 /* Build configuration list for PBXNativeTarget "GCSwiftLabelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF988D062B25BED7D8F0C6B6DA70B7A /* Debug */,
+				847048D46A1D96FBA79700E6F8DEDFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,5 +1,4 @@
 import XCTest
-import GCSwiftLabelView
 
 class Tests: XCTestCase {
     

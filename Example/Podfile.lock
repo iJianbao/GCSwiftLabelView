@@ -1,0 +1,16 @@
+PODS:
+  - GCSwiftLabelView (0.1.0)
+
+DEPENDENCIES:
+  - GCSwiftLabelView (from `../`)
+
+EXTERNAL SOURCES:
+  GCSwiftLabelView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GCSwiftLabelView: bd3a586afa2bbc6d1ec1cd704e3c9fddc1031702
+
+PODFILE CHECKSUM: 378928ad9a259bd28e3df9fb5d4c023738250be2
+
+COCOAPODS: 1.9.0

@@ -1,0 +1,6 @@
+framework module GCSwiftLabelView {
+  umbrella header "GCSwiftLabelView-umbrella.h"
+
+  export *
+  module * { export * }
+}
